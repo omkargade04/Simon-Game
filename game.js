@@ -26,7 +26,8 @@ $(document).keypress(function(){
 
 $(".start").click(function(){
     if(!started){
-
+        let userChosenColour = $(this).attr("id");
+        animatePress(userChosenColour);
         nextSequence();
         started = true
     }
