@@ -24,6 +24,14 @@ $(document).keypress(function(){
     }
 });
 
+$(".start").click(function(){
+    if(!started){
+
+        nextSequence();
+        started = true
+    }
+});
+
 //1. Inside game.js create a new function called nextSequence()
 function nextSequence(){
 
